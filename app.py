@@ -186,7 +186,7 @@ DUAS = [
 def add_dua(reply):
     """
     إضافة دعاء عشوائي أحيانًا.
-    الاحتمال الحالي = 20%
+    الاحتمال الحالي = 90%
     """
     if random.random() > 0.20:
         return reply
