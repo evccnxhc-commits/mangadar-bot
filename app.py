@@ -8,6 +8,24 @@ VERIFY_TOKEN = "Ghasaq_MangaDar_Verify_2026"
 def home():
     return "MangaDar Bot is running!"
 
+@app.get("/privacy")
+def privacy():
+    return """
+    <html>
+    <head>
+        <title>Privacy Policy - MangaDar Bot</title>
+    </head>
+    <body>
+        <h1>Privacy Policy</h1>
+        <p>MangaDar Bot respects your privacy.</p>
+        <p>This service is used to respond to messages sent to the MangaDar Bot Facebook Page.</p>
+        <p>We do not sell or share personal information with third parties.</p>
+        <p>Messages may be processed only as necessary to provide the requested bot service.</p>
+        <p>For questions, contact evccnxhc@gmail.com.</p>
+    </body>
+    </html>
+    """
+
 @app.get("/webhook")
 def verify_webhook():
     mode = request.args.get("hub.mode")
